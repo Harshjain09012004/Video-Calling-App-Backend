@@ -16,8 +16,8 @@ const roomHandler = (socket: Socket) => {
         console.log("Room created with id", roomId);
     };
 
-    const joinedRoom = ()=>{
-        console.log("Joinded Room");
+    const joinedRoom = ({roomId}: {roomId: string})=>{
+        console.log("New user joined room :", roomId);
     };
 
     // We will call the above two function when the client will
