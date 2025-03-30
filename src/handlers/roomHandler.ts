@@ -10,7 +10,7 @@ const roomHandler = (socket: Socket) => {
         // this will be our unique room id in which multiple
         // connection will exchange data
         const roomId = UUIDv4();
-        rooms[roomId] = []; //Create the key for current room
+        rooms[roomId] = []; // Create the key for current room
 
         // we will make the socket connection enter a new room
         // socket.join(roomId);
